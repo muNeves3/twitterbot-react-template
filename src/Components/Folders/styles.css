@@ -1,0 +1,92 @@
+  
+	:root {
+		--main-color: #0bc750;
+		--text-color: rgb(113, 89, 193);
+		--boxes-color: rgb(25, 24, 31);
+		--background-color: rgb(11, 10, 13);
+	}
+
+	body {
+		background: var(--background-color);
+		background-image: url(https://skylab.rocketseat.com.br/static/media/MountainsOpacity.a4edba24.png );
+	}
+
+	.wrapper {
+		max-width: 400px;
+		margin: 0 auto;
+	}
+
+	h1 {
+		text-align: center;
+		margin: 60px 0 40px 0;
+		font-size: 1.5em;
+		color: var(--text-color);
+		font-family: 'Roboto', sans-serif;
+		text-transform: uppercase;
+	}
+
+	.lista-specs {
+		background: var(--boxes-color);
+		border-radius: 6px;
+		margin-bottom: 20px;
+		padding: 10px;
+		box-shadow: 0 4px 6px rgba(56, 56, 56, 0.3);
+	}
+
+	.titulo-spec {
+		cursor: pointer;
+		padding: 10px;
+		font-size: 1.4em;
+		font-family: monospace;
+		color: var(--text-color);
+		font-family: 'Roboto', sans-serif;
+		font-size: 20px;
+	}
+
+	.titulo-spec img {
+		float: left;
+		height:36;
+		width: 36px;
+		display: flex;
+		justify-content: space-between;
+		margin-top: -8px;
+		padding-right: 10px;
+	}
+
+	.titulo-spec::after {
+		content: "+";
+		float: right;
+		transition: transform .3s ease;
+	}
+
+	.conteudo-spec {
+		padding: 10px;
+		color: var(--text-color);
+		font-family: 'Roboto', sans-serif;
+		font-size: .875em;
+		line-height: 1.4em;
+		display: none;
+	}
+
+	.image-wrapper {
+		display:flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.gitilogo .img1{
+		margin-right: 15px;
+	}
+
+	.trigger-input {
+		display: none;
+	}
+
+	.trigger-input:checked+.trigger-wrapper .conteudo-spec {
+		display: block;
+	}
+
+
+	.trigger-input:checked+.trigger-wrapper .titulo-spec::after {
+		transform: rotate(45deg) scale(1.08);
+	}
