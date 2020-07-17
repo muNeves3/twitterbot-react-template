@@ -6,7 +6,7 @@
 
 **link para o site**
 
-<a href="https://angry-brattain-5b4191.netlify.app" target="_blank">`https://muneves3.github.io/bot-template/`</a>
+<a href="https://angry-brattain-5b4191.netlify.app" target="_blank">`https://angry-brattain-5b4191.netlify.app`</a>
 
 **link repositorio github**
 
